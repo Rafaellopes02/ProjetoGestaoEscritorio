@@ -2,10 +2,10 @@ const { Model } = require("sequelize");
 const Sequelize = require("sequelize");
 const database = require("../context/db");
 
-const PessoaModel = database.define(
-  "pessoa" /*isto é o nome da tabela da base de dados*/,
+const FuncionarioModel = database.define(
+  "funcionarios" /*isto é o nome da tabela da base de dados*/,
   {
-    NPessoa: {
+    Num_Funcionario: {
       type: Sequelize.INTEGER, //tipo de dados
       autoIncrement: true,
       primaryKey: true,
@@ -18,23 +18,35 @@ const PessoaModel = database.define(
       type: Sequelize.DATE,
       allowNull: false,
     },
-    Nacionalidade: {
+    CP: {
       type: Sequelize.STRING,
       allowNull: false,
     },
-    Cidade: {
+    Telefone: {
       type: Sequelize.STRING,
       allowNull: false,
     },
-    Freguesia: {
+    Email: {
       type: Sequelize.STRING,
       allowNull: false,
     },
-    Morada: {
+    Cc: {
       type: Sequelize.STRING,
       allowNull: false,
     },
+    Nif: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
+    IBAN: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
+    Tipo: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    }
   }
 );
 
-module.exports = PessoaModel;
+module.exports = FuncionarioModel;

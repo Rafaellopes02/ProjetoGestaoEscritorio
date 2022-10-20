@@ -1,16 +1,26 @@
 const router = require("express").Router();
 
-//ROUTE DAS PESSOAS
-const pessoaRouter = require("./pessoa");
-router.use("/pessoa", pessoaRouter);
+//ROUTE DOS CLIENTES
+const clientesRouter = require("./clientes");
+router.use("/clientes", clientesRouter);
 
-//ROUTE DA HABILITAÇÃO ACADÉMICA
-const habacademicRouter = require("./habacademic");
-router.use("/habacademic", habacademicRouter);
+const CpRouter = require("./cp");
+router.use("/cp", CpRouter);
 
-//ROUTE DOS HOBBIES
-const hobbiesRouter = require("./hobbies");
-router.use("/hobbies", hobbiesRouter);
+const FuncionariosRouter = require("./funcionarios");
+router.use("/funcionarios", FuncionariosRouter);
+
+const FuncionarioTrabalhadorRouter = require("./funcionariotrabalhador");
+router.use("/funcionariotrabalhador", FuncionarioTrabalhadorRouter);
+
+const LoginRouter = require("./login");
+router.use("/login", LoginRouter);
+
+const PagamentosRouter = require("./Pagamentos");
+router.use("/Pagamentos", PagamentosRouter);
+
+const TrabalhosRouter = require("./Trabalhos");
+router.use("/Trabalhos", TrabalhosRouter);
 
 router.get("/", (req, res) => {
   res.send("welcome /api!");
