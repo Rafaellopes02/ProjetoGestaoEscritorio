@@ -1,11 +1,11 @@
-const PessoaModel = require("../data/models/pessoa");
+const PagamentosModel = require("../data/models/pagamentos");
 
 exports.getAll = async (req, res) => {
-  const pessoa = await PessoaModel.findAll();
+  const pagamento = await PagamentosModel.findAll();
 
-  if (pessoa) {
+  if (pagamento) {
     //cenario de sucesso
-    return res.json({ success: true, data: pessoa });
+    return res.json({ success: true, data: pagamento });
   } else {
     //cenario de erro
     return res.json({ success: false });
@@ -13,19 +13,19 @@ exports.getAll = async (req, res) => {
 };
 
 exports.getById = async (req, res) => {
-  const id = req.params.NPessoa;
-  const pessoa = await PessoaModel.findByPk(id);
+  const id = req.params.IdPagamento;
+  const pagamento = await PagamentosModel.findByPk(id);
 
-  if (pessoa) {
+  if (pagamento) {
     //cenario de sucesso
-    return res.json({ success: true, data: pessoa });
+    return res.json({ success: true, data: pagamento });
   } else {
     //cenario de erro
     return res.json({ success: false });
   }
 };
 
-exports.create = async (req, res) => {
+/*exports.create = async (req, res) => {
   const {
     NPessoa,
     Nome,
@@ -91,4 +91,4 @@ exports.delete = async (req, res) => {
     where: { NPessoa },
   });
   return res.json({ success: true });
-};
+};*/

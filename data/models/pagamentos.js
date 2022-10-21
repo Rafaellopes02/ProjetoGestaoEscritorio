@@ -3,7 +3,7 @@ const Sequelize = require("sequelize");
 const database = require("../context/db");
 
 const PagamentoModel = database.define(
-  "Pagamentos" /*isto é o nome da tabela da base de dados*/,
+  "pagamentos" /*isto é o nome da tabela da base de dados*/,
   {
     IdPagamento: {
       type: Sequelize.INTEGER, //tipo de dados

@@ -12,6 +12,7 @@ const FuncionarioTrabalhoModel = database.define(
     IdTrabalho: {
       type: Sequelize.INTEGER,
       allowNull: false,
+      primaryKey: true,
     },
     Num_Horas: {
       type: Sequelize.INTEGER,

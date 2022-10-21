@@ -10,8 +10,8 @@ router.use("/cp", CpRouter);
 const FuncionariosRouter = require("./funcionarios");
 router.use("/funcionarios", FuncionariosRouter);
 
-const FuncionarioTrabalhadorRouter = require("./funcionariotrabalhador");
-router.use("/funcionariotrabalhador", FuncionarioTrabalhadorRouter);
+const FuncionarioTrabalhoRouter = require("./FuncTrab");
+router.use("/FuncTrab", FuncionarioTrabalhoRouter);
 
 const LoginRouter = require("./login");
 router.use("/login", LoginRouter);
