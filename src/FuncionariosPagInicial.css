@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  background-color: #d9d9d9;
+}
+.navbarleft{
+  position:absolute;
+  margin: inherit;
+  left: 0px;
+  top: 0px;
+  background-color: white;
+  width: 15%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
+}
+.imgMenu{
+  width: 10%;
+  height: auto;
+  background-color: transparent;
+  padding: 3% 0px 0px 85%;
+}
+.imgfuncionario{
+  width: 70%;
+  height: auto;
+  background-color: transparent;
+  margin: 10% 15% 7% 15%; /*top, left, bottom, rigth*/
+  border-radius: 50%;
+}
+.nomefuncionario{
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: 150%;
+  text-align: center;
+  margin-bottom: 20%;
+}
+.imghome{
+  width: 15%;
+  height: 15%;
+  background-color: transparent;
+  margin: 0px 10px -5px 0px;
+}
+.imgclient{
+  width: 15%;
+  height: 15%;
+  background-color: transparent;
+  margin: 0px 12px -5px -58px;
+}
+.imgwork{
+  width: 15%;
+  height: 15%;
+  background-color: transparent;
+  margin: 0px 12px -5px -34px;
+}
+.buttons{
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: 150%;
+  text-align: center;
+  padding: 5% 0px 5% 0px;
+  margin-bottom: -2px;
+}
+.buttons:hover{
+  color: rgb(186, 186, 186);
+  font-weight: bolder;
+  font-size: 150%;
+  text-align: center;
+  padding: 5% 0px 5% 0px;
+  margin-bottom: -2px;
+  pointer-events: fill;
+}
+.imgLogOut{
+  width: 2%;
+  height: 2%;
+  background-color: transparent;
+  padding: 1% 0px 0px 97%;
+}
+.imgBemVindo{
+  width: 20%;
+  height: 20%;
+  background-color: transparent;
+  padding: 60px 0px 0px 715px;
+}
+.textBemVindo{
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: 15%;
+  margin-top: 3%;
+}
